@@ -1,13 +1,17 @@
 using JetBrains.Annotations;
+using MoreMountains.Feedbacks;
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] private EnemyController _enemyController;
-    [SerializeField] private AudioSource _audioSource;
-    [SerializeField] private AudioClip _strike;
-    [SerializeField] private AudioClip _explosion;
-    [SerializeField] private AudioClip _gaveDemage;
+
+    private MMF_AudioSource _MMF_audioSource;
+
+    private void Awake()
+    {
+        _MMF_audioSource = new MMF_AudioSource();
+    }
 
     private void Start()
     {
@@ -20,9 +24,18 @@ public class SoundManager : MonoBehaviour
     }
 
     [UsedImplicitly] // назначен на кнопку выстрела
-    public void Strike() => _audioSource.PlayOneShot(_strike, 0.11f);
+    public void Strike()
+    {
+        _MMF_audioSource.Play(Vector3.zero);
+    }
 
-    public void Explosion() => _audioSource.PlayOneShot(_explosion, 0.35f);
+    public void Explosion()
+    {
+        _MMF_audioSource.Play(Vector3.zero);
+    }
 
-    private void PlayDamageClip() => _audioSource.PlayOneShot(_gaveDemage);
+    private void PlayDamageClip()
+    {
+        _MMF_audioSource.Play(Vector3.zero);
+    }
 }

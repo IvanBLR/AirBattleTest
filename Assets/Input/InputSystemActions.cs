@@ -180,7 +180,7 @@ public partial class @InputSystemActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""3ea4d645-4504-4529-b061-ab81934c3752"",
-                    ""path"": ""<Joystick>/stick"",
+                    ""path"": ""<AndroidJoystick>/stick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Joystick"",
@@ -213,7 +213,7 @@ public partial class @InputSystemActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""3e5f5442-8668-4b27-a940-df99bad7e831"",
-                    ""path"": ""<Joystick>/{Hatswitch}"",
+                    ""path"": ""<AndroidJoystick>/stick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Joystick"",
