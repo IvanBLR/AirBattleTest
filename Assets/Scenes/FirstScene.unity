@@ -21179,8 +21179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76d0cdb88f536824eb411e9430febc48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _firePoint: {fileID: 2038863394}
-  _point: {x: 0, y: -1.33, z: 100}
   _bullet: {fileID: -7612049734684600035, guid: 18d0e5388d33ebc4e99a11fc64831eae, type: 3}
 --- !u!4 &1280631273
 Transform:
@@ -21336,7 +21334,6 @@ MonoBehaviour:
   _explosionPoint: {fileID: 1093975552095822065, guid: 58a881b9866fc664e86a5ab59271ffcd, type: 3}
   _virtualCamera: {fileID: 616033884}
   _explosion: {fileID: 1093975552095822066, guid: 58a881b9866fc664e86a5ab59271ffcd, type: 3}
-  _fireController: {fileID: 1280631272}
   _fireButton: {fileID: 1636797692}
   _soundManager: {fileID: 270447733}
   _xSpeedRotation: 75
